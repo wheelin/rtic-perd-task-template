@@ -46,7 +46,7 @@ const PERD_TASKS: () = {
     #[idle]
     fn idle(_: idle::Context) -> ! {
         loop {
-            
+            asm::wfi();
         }
     }
 
